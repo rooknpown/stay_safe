@@ -18,17 +18,13 @@ jobs:
       - run: flutter pub get
       - run: flutter build web --release
         # 1. change path which exist lib/main.dart
-        working-directory: ./stay_safe/lib
+        working-directory: ./build/web
       - run: |
-          # 2. change path to [existed lib/main.dart path]/build/web
           cd build/web
           git init
-           # 3. change your email
           git config --global user.email rooknpown@naver.com
-          # 4. change your name
           git config --global user.name rooknpown
           git status
-          # 5. change your repository
           git remote add origin https://github.com/rooknpown/stay_safe 
           git checkout -b gh-pages
           git add --all
