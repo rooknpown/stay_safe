@@ -25,7 +25,7 @@ jobs:
           git config --global user.email rooknpown@naver.com
           git config --global user.name rooknpown
           git status
-          git remote add origin https://$@github.com/rooknpown/stay_safe.git 
+          git remote add origin https://rooknpown:Mxu1i2hn86!@github.com/rooknpown/stay_safe.git 
           git checkout -b gh-pages
           git add --all
           git commit -m "update"
