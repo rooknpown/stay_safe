@@ -18,7 +18,7 @@ jobs:
       - run: flutter pub get
       - run: flutter build web --release
         # 1. change path which exist lib/main.dart
-        working-directory: ./build/web
+        working-directory: ./stay_safe
       - run: |
           cd build/web
           git init
